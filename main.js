@@ -11,12 +11,14 @@ var finalReindeer = [];
 
 var hohohoElement = document.getElementById("coloredReindeer");
 
+finalReindeer.push("<ul>");
 
 
 for (i = 0; i < reindeer.length; i++) {
-	finalReindeer.push(colors[i] + " " + reindeer[i] + "<br>");
+	finalReindeer.push("<li>" + colors[i] + " " + reindeer[i] + "</li>");
 }
+finalReindeer.push("<ul>");
+console.log(finalReindeer)
 
 finalReindeer = finalReindeer.join(" ");
-console.log(finalReindeer);
 hohohoElement.innerHTML = finalReindeer;

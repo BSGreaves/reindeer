@@ -18,7 +18,6 @@ for (i = 0; i < reindeer.length; i++) {
 	finalReindeer.push("<li>" + colors[i] + " " + reindeer[i] + "</li>");
 }
 finalReindeer.push("<ul>");
-console.log(finalReindeer)
 
 finalReindeer = finalReindeer.join(" ");
 hohohoElement.innerHTML = finalReindeer;
